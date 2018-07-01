@@ -1,0 +1,151 @@
+body { 
+  font: 10px sans-serif;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.axis15 path,
+.axis15 line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.y15.axis15 .tick:not(.tick--one) line {
+  stroke-opacity: .2;
+}
+.y15.axis15 path {
+  display: none;
+}
+.y15.axis15 line {
+}
+.line15 {
+  fill: none;
+}
+
+.axis path,
+
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+
+/*  display: none;*/
+
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.lineeth {
+  fill: none;
+  stroke: darkOrange;
+  stroke-width: 1.5px;
+}
+
+.linelit {
+  fill: none;
+  stroke: DarkKhaki;
+  stroke-width: 1.5px;
+}
+
+.chart {
+  height: 500px;
+  position: relative;
+}
+
+.dot {
+	opacity: 0;
+}
+
+.area {
+    fill: lightsteelblue;
+}
+
+.areaeth {
+    fill: bisque;
+}
+
+.arealit {
+    fill: Khaki;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: white;
+  stroke: steelblue;
+  stroke-width:2px;
+}
+
+.focus1 circle {
+  fill: white;
+  stroke: darkOrange;
+  stroke-width:2px;
+}
+
+.focus2 circle {
+  fill: white;
+  stroke: DarkKhaki;
+  stroke-width:2px;
+}
+
+label {display:block; text-align:right; font-size:12px;}
+
+/* Tooltip styles below */
+
+.chart {
+  height: 500px;
+  position: relative;
+}
+
+.tt {
+	background-color: #fff;
+	padding: 8px;
+	outline: 1px solid #ccc;
+	display: none;
+	position: absolute;
+}
+
+.tt .name {
+	font-size: 14px;
+}
+
+.tt .date {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.tt .price {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 85px;
+  height: 30px;
+  padding: 2px;
+  font: 12px sans-serif;
+  font-weight: bold;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}

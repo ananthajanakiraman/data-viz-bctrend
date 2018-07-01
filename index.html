@@ -1,7 +1,214 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!doctype html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>Cryptocurrency Visualization</title><?php /* EDIT ME */ ?>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="style.css"/>
+    
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    
+</head>
+
+<body class="">
+
+    <div id="main-wrapper" class="">
+        <div id="main-content" class="container">
+            <header class="row">
+                <div class="social-links col-md-12"></div>
+                <div class="col-md-12">
+
+                    <h1>Cryptocurrency Trend Visualization</h1>
+                    <div class="byline">By <a href="#">Anantha Janakiraman</a></div>
+
+                    <div class="meta">
+                        Published Jul. 31, 2017
+                    </div>
+                </div>
+            </header>
+            
+            <br>
+            
+            <div class="tabbable">
+            <ul class="nav nav-tabs">
+                <li class="active"><a class="dtab" href="#d_tab" data-toggle="tab">Summary</a>
+                </li>
+                <li><a class="atab" href="#a_tab" data-toggle="tab">Bitcoin (BTH)</a>
+                </li>
+                <li><a class="btab" href="#b_tab" data-toggle="tab">Ethereum (ETH)</a></li>
+                <li><a class="ctab" href="#c_tab" data-toggle="tab">Litecoin (LTH)</a></li>
+                
+            </ul>
+            <div class="tab-content">
+
+                <div class="tab-pane active" id="d_tab">
+                    <H2>About the Visualization</H2>
+                    <p> A cryptocurrency (or crypto currency) is a digital asset designed to work as a 
+                        medium of exchange using cryptography to secure the transactions and to control 
+                        the creation of additional units of the currency. Cryptocurrencies are classified 
+                        as a subset of digital currencies and are also classified as a subset of alternative 
+                        currencies and virtual currencies.</p>
+
+                    <p> Bitcoin became the first decentralized cryptocurrency in 2009. Since then, numerous 
+                        cryptocurrencies have been created. These are frequently called altcoins, as a blend 
+                        of bitcoin alternative. Bitcoin and its derivatives use decentralized control
+                        as opposed to centralized electronic money/centralized banking systems. The decentralized 
+                        control is related to the use of bitcoin's blockchain transaction database in the
+                        role of a distributed ledger.</p>
+                    
+                    <p> Below is the current market capitalization of different cryptocurrencies and this visualization 
+                        is a preliminary study of the three most popular cryptocurrencies (Bitcoin, Ethereum and Litecoin) traded
+                        worldwide and Yes!!! I am considering buying the most popular Bitcoin cryptocurrency and the second most 
+                        popular Ethereum cryptocurrency based on the recent trend as obvious from this visualization.</p>
+                    
+                    <p style="text-align:center">
+                        <img src="Cryptocurrency.png" alt="Cryptocurrency" style="width:980px;height:400px;" align="middle">
+                        <script>
+                            
+                        </script>
+                        
+                    </p>
+                
+                    <H2> Narrative Visualization </H2>
+                    
+                    <p> The visualiziation narrates the trends over different time periods (5 Years, 3 Years, 1 Year, 6 Months and 1 Month)
+                        for the three most popular crytocurrencies currently traded worldwide. The main visualization includes slides 
+                        laid out as tabs to visualize the trend for the three most popular cryptocurrencies and each of the slide includes
+                        five different parameter setting corresponding to five different time periods used for narration. The parameter 
+                        setting enables drill down into specific scene or trend visualization for that specific time period and cryptocurrency.
+                        Annotation with transition has been included to highlight the peak point or peak value and the lowest point or lowest value for the 
+                        specific scene or time period for each cryptocurrency type. Each scene in the slide has a tool tip to show details on 
+                        demand that slides over the entire chart area and is enabled during a mouse over or mouse move event, the tool tip design 
+                        includes a dashed array ruler that runs across the axes and a stroked circle matching the chart color and representing the data 
+                        point. The chart type used  in the visualization is a line chart with color filled area and different color scales have been 
+                        employed for the currency types to enable visual differentiation. Colors, tool tips, annotations, 
+                        parameters etc are kept consistent across the scenes in each slide or tab. The X-Axis represents date variable and Y-Axis 
+                        represents closing price, the axes are transformed and scaled for each scene according to the data being visualized to fit
+                        in the SVG canvas area. The charts transition between different time periods or scenes through the D3 transition function and
+                        the data, axes, tooltips, colorscales and annotations transition along with the charts which is one of the highlights of this visualization.
+                    </p>
+                    <p>
+                        The data used for this visualization has been gathered from different financial portals including investing.com, 
+                        cryptocompare.com, coinbase.com and coindesk.com. The date range used for this visualziation is between June 2012 to July 2017.
+                        The visualization is coded using D3 JS library and I will continue to enhance the visualization to add more drill down features
+                    </p>
+                </div>
+                
+                    <div class="tab-pane" id="a_tab">
+                    
+                    <br>
+                    <form>
+                          <label><input type="radio" name="BTHY" id="BFYR" value="5YR" checked> 5 Years</label>
+                          <label><input type="radio" name="BTHY" value="3YR"> 3 Years</label>
+                          <label><input type="radio" name="BTHY" value="1YR"> 1 Year</label>
+                          <label><input type="radio" name="BTHY" value="6MO"> 6 Months</label>                        
+                          <label><input type="radio" name="BTHY" value="1MO"> 1 Month</label>
+                    </form>
+                    <acontent></acontent>
+                </div>
+                <div class="tab-pane" id="b_tab">
+                    <br>
+                    <form>
+                          <label><input type="radio" name="ETHY" id="EFYR" value="5YR" checked> 5 Years</label>
+                          <label><input type="radio" name="ETHY" value="3YR"> 3 Years</label>                        
+                          <label><input type="radio" name="ETHY" value="1YR"> 1 Year</label>
+                          <label><input type="radio" name="ETHY" value="6MO"> 6 Months</label>                        
+                          <label><input type="radio" name="ETHY" value="1MO"> 1 Month</label>
+                    </form>
+                    <bcontent></bcontent>
+                </div>
+                <div class="tab-pane" id="c_tab">
+                    <br>
+                    <form>
+                          <label><input type="radio" name="LITY" id="LFYR" value="5YR" checked> 5 Years </label>
+                          <label><input type="radio" name="LITY" value="3YR"> 3 Years</label> 
+                          <label><input type="radio" name="LITY" value="1YR"> 1 Year</label>
+                          <label><input type="radio" name="LITY" value="6MO"> 6 Months</label>
+                          <label><input type="radio" name="LITY" value="1MO"> 1 Month</label>          
+                    </form>
+                    <ccontent></ccontent>
+                </div>
+            </div>
+            </div>
+
+            <!--section class="row"-->
+
+            <!--div class="col-md-12 chart"-->
+
+                <!-- ********* -->
+                <!-- The empty div for the tooltip goes inside of our chart div -->
+                <!-- ********* -->
+                <!--div class="tt"--><!--/div-->
+            <!--/div-->
+
+            <!--/section-->
+            
+            <footer>
+                <br>
+                <div id="source-line">Description: Narrative Visualization - Data Visualization Project</div>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <!-- jQuery.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.js" charset="utf-8"></script>-->
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- d3 Annotate JS -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.18.0/d3-annotation.min.js" charset="utf-8"--><!--/script-->
+    
+    <!-- Our application script -->
+    
+        <script>
+            $.ajaxSetup ({
+                // Disable caching of AJAX responses
+                // Used when debugging
+                cache: false
+            });
+            
+            //$.getScript("bitcoinviz.js");        
+            $(".atab").click(function() {
+                $.getScript("bitcoinviz.js");
+            })
+           //$('input[name="BTHY"]').on("change", function (e) { 
+           //    $.getScript("bitcoinviz.js");
+           //})
+        </script>
+        <script>
+            
+            $(".btab").click(function() {
+                $.getScript("ethcoinviz.js");
+            })
+            //$('input[name="ETHY"]').on("change", function (e) {
+            //   $.getScript("ethcoinviz.js");
+            //})            
+        </script>
+        <script>
+            
+            $(".ctab").click(function() {
+                $.getScript("lthcoinviz.js");
+            })
+            //$('input[name="LITY"]').on("change", function (e) {
+            //   $.getScript("lthcoinviz.js");
+           //})            
+        </script>    
+    <!--<script src="bitcoinviz.js" charset="utf-8"></script>-->
+   
 </body>
 </html>
