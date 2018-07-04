@@ -1,4 +1,4 @@
-**Link to visualization: https://ananthajanakiraman.github.io**
+**Link to visualization: https://ananthajanakiraman.github.io/data-viz-bctrend**
 
 **This visualization was created using D3.js**
 
